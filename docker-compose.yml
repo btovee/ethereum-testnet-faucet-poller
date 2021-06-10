@@ -1,0 +1,15 @@
+version: '3'
+
+services:
+
+  faucet-poller:
+    image: ethereum-testnet-faucet-poller:latest
+#    command: []
+    ports:
+    - "443:443"
+    - "80:80"
+
+networks:
+  defaults:
+    external: true
+    name: host
